@@ -1,3 +1,4 @@
+#To create the label for the dataset
 import os
 import numpy as np
 import cv2
@@ -57,7 +58,7 @@ lt = np.array(labels)
 from sklearn.model_selection import train_test_split
 xtrain,xtest,ytrain,ytest = train_test_split(ft,lt)
 
-#""""""""""""""'''''''''''''''''"%% Model
+#%% Model
 model = Sequential()
 
 model.add(Conv2D(146, (5, 5), activation='relu', input_shape=(100,100,3)))
